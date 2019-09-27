@@ -111,79 +111,6 @@
             </objects>
             <point key="canvasLocation" x="1732" y="-593"/>
         </scene>
-        <!--Locations-->
-        <scene sceneID="FRF-jw-uPS">
-            <objects>
-                <tableViewController id="s71-bH-P0m" customClass="LocationsViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AWu-LK-Fm3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="90" id="gsM-pY-2q0" customClass="LocationCell" customModule="MyLocations" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gsM-pY-2q0" id="7Ti-3U-reF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45K-Ff-nm1">
-                                            <rect key="frame" x="16" y="2" width="382" height="22"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ly-lL-dLa">
-                                            <rect key="frame" x="16" y="28" width="382" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="45K-Ff-nm1" secondAttribute="trailing" constant="16" id="5j8-r5-vcv"/>
-                                        <constraint firstItem="9ly-lL-dLa" firstAttribute="trailing" secondItem="45K-Ff-nm1" secondAttribute="trailing" id="7pu-SV-oKh"/>
-                                        <constraint firstItem="45K-Ff-nm1" firstAttribute="leading" secondItem="7Ti-3U-reF" secondAttribute="leading" constant="16" id="Iaj-za-Tek"/>
-                                        <constraint firstItem="9ly-lL-dLa" firstAttribute="top" secondItem="45K-Ff-nm1" secondAttribute="bottom" constant="4" id="OyF-EX-8Wr"/>
-                                        <constraint firstItem="45K-Ff-nm1" firstAttribute="top" secondItem="7Ti-3U-reF" secondAttribute="top" constant="2" id="bQw-D4-wgg"/>
-                                        <constraint firstItem="9ly-lL-dLa" firstAttribute="leading" secondItem="45K-Ff-nm1" secondAttribute="leading" id="frQ-U4-4BD"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="addressLabel" destination="9ly-lL-dLa" id="kQZ-Qw-Gt1"/>
-                                    <outlet property="titleLabel" destination="45K-Ff-nm1" id="f8k-g5-5pk"/>
-                                    <segue destination="2f3-d3-yG9" kind="show" identifier="EditLocation" id="5lu-oX-FeO"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="s71-bH-P0m" id="cMg-v2-7Gi"/>
-                            <outlet property="delegate" destination="s71-bH-P0m" id="w2A-Bn-yqs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Locations" id="C8I-gL-EsV"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jXB-h6-uo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1819" y="376"/>
-        </scene>
-        <!--Saved-->
-        <scene sceneID="Ihu-TR-3Ig">
-            <objects>
-                <navigationController id="vSb-aB-gOO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Saved" image="pin" selectedImage="pin" id="3GN-Yv-K1U"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="46j-nW-9rh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="s71-bH-P0m" kind="relationship" relationship="rootViewController" id="YBL-Na-4Ag"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qb1-1e-9as" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="771" y="377"/>
-        </scene>
         <!--Tag Location-->
         <scene sceneID="K4Y-o2-xY6">
             <objects>
@@ -406,7 +333,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="7Uf-d3-8Pg" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="vSb-aB-gOO" kind="relationship" relationship="viewControllers" id="mNP-Rm-WOr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -435,9 +361,5 @@
     </scenes>
     <resources>
         <image name="location" width="32" height="32"/>
-        <image name="pin" width="25" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="5lu-oX-FeO"/>
-    </inferredMetricsTieBreakers>
 </document>

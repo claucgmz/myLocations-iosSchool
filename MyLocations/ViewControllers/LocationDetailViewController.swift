@@ -17,18 +17,13 @@ class LocationDetailViewController: UITableViewController {
   @IBOutlet weak var addressLabel: UILabel!
   
   var newLocation: MyLocation?
-  var myLocationSaved: MyLocation? 
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
     if let location = newLocation {
       setLabelsForLocation(myLocation: location)
       return
-    }
-    
-    if let location = myLocationSaved {
-      setLabelsForLocation(myLocation: location)
     }
   }
   
@@ -51,13 +46,6 @@ class LocationDetailViewController: UITableViewController {
   }
   
   @IBAction func done() {
-    
-    if let savedLocation = myLocationSaved {
-      savedLocation.placeTitle = titleTextField.text ?? ""
-      savedLocation.placeDescription = descriptionTextView.text ?? ""
-      StaticDatabase.myLocations[savedLocation.id] = savedLocation
-    }
-    
     if let newLocation = newLocation {
       newLocation.placeTitle = titleTextField.text ?? ""
       newLocation.placeDescription = descriptionTextView.text ?? ""
