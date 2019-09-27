@@ -395,47 +395,6 @@
             </objects>
             <point key="canvasLocation" x="2977" y="-129"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="Xz0-5x-MUy">
-            <objects>
-                <viewController id="jHP-fS-rmd" customClass="MapViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FV5-jc-0gk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTs-8o-Dyr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                            </mapView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="MTs-8o-Dyr" firstAttribute="leading" secondItem="jdO-9w-48P" secondAttribute="leading" id="26T-b8-pZv"/>
-                            <constraint firstItem="jdO-9w-48P" firstAttribute="bottom" secondItem="MTs-8o-Dyr" secondAttribute="bottom" id="2kt-Ki-sTa"/>
-                            <constraint firstItem="jdO-9w-48P" firstAttribute="trailing" secondItem="MTs-8o-Dyr" secondAttribute="trailing" id="4XN-GO-Qgm"/>
-                            <constraint firstItem="MTs-8o-Dyr" firstAttribute="top" secondItem="jdO-9w-48P" secondAttribute="top" id="srG-5M-1js"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="jdO-9w-48P"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Map" id="Zy5-qk-vlk">
-                        <barButtonItem key="leftBarButtonItem" title="My Locations" id="9Gb-eF-1bZ">
-                            <connections>
-                                <action selector="showLocations" destination="jHP-fS-rmd" id="GhT-f9-iVi"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Current Position" id="VHT-dB-zou">
-                            <connections>
-                                <action selector="showUserLocation" destination="jHP-fS-rmd" id="vuU-oD-cba"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="mapView" destination="MTs-8o-Dyr" id="Phi-sb-7gb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iP8-Qw-ifu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="812" y="1112"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -448,7 +407,6 @@
                     <connections>
                         <segue destination="7Uf-d3-8Pg" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="vSb-aB-gOO" kind="relationship" relationship="viewControllers" id="mNP-Rm-WOr"/>
-                        <segue destination="txJ-c2-drx" kind="relationship" relationship="viewControllers" id="lgp-yZ-Ih3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -474,29 +432,9 @@
             </objects>
             <point key="canvasLocation" x="772" y="-593"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="vCm-zU-mRl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="txJ-c2-drx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="cHD-3I-vra"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jSP-VC-09N">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jHP-fS-rmd" kind="relationship" relationship="rootViewController" id="uWY-nD-MoS"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4K3-JM-yO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="12" y="1112"/>
-        </scene>
     </scenes>
     <resources>
         <image name="location" width="32" height="32"/>
-        <image name="map" width="32" height="32"/>
         <image name="pin" width="25" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

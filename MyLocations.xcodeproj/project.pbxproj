@@ -17,7 +17,6 @@
 		5F78B2E12335D22C00E6A51C /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2E02335D22C00E6A51C /* LocationsViewController.swift */; };
 		5F78B2E32335D3D300E6A51C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2E22335D3D300E6A51C /* LocationCell.swift */; };
 		5F78B2E62335DD6C00E6A51C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78B2E52335DD6C00E6A51C /* MapKit.framework */; };
-		5F78B2EB2335E0E500E6A51C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2EA2335E0E500E6A51C /* MapViewController.swift */; };
 		5F9E2CE0233EAB220002E658 /* StaticDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E2CDF233EAB220002E658 /* StaticDatabase.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		5F78B2E02335D22C00E6A51C /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		5F78B2E22335D3D300E6A51C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		5F78B2E52335DD6C00E6A51C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		5F78B2EA2335E0E500E6A51C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5F9E2CDF233EAB220002E658 /* StaticDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +94,6 @@
 				5F78B2E02335D22C00E6A51C /* LocationsViewController.swift */,
 				5F78B2DC2335ACC600E6A51C /* LocationDetailViewController.swift */,
 				5F78B2CA23356DAC00E6A51C /* CurrentLocationViewController.swift */,
-				5F78B2EA2335E0E500E6A51C /* MapViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 				5F9E2CE0233EAB220002E658 /* StaticDatabase.swift in Sources */,
 				5F78B2CB23356DAC00E6A51C /* CurrentLocationViewController.swift in Sources */,
 				5F78B2E12335D22C00E6A51C /* LocationsViewController.swift in Sources */,
-				5F78B2EB2335E0E500E6A51C /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
