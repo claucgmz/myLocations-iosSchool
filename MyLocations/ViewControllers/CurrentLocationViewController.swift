@@ -120,11 +120,6 @@ class CurrentLocationViewController: UIViewController {
         }
     }
   }
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "NewTagLocationSegue", let detailViewController = segue.destination as? LocationDetailViewController {
-      detailViewController.newLocation = myLocation
-    }
-  }
 }
 
 extension CurrentLocationViewController: CLLocationManagerDelegate {
@@ -134,7 +129,7 @@ extension CurrentLocationViewController: CLLocationManagerDelegate {
       }
         
       runReverseGeocoding(forLocation: lastLocation)
-      myLocation = MyLocation(id: StaticDatabase.myLocations.count - 1, title: "", description: "", coordinates: lastLocation.coordinate, placemark: nil)
+      myLocation = MyLocation(id: 0, title: "", description: "", coordinates: lastLocation.coordinate, placemark: nil)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

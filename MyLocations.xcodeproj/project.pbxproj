@@ -12,11 +12,9 @@
 		5F78B2D023356DAC00E6A51C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F78B2CE23356DAC00E6A51C /* Main.storyboard */; };
 		5F78B2D223356DAD00E6A51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F78B2D123356DAD00E6A51C /* Assets.xcassets */; };
 		5F78B2D523356DAD00E6A51C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F78B2D323356DAD00E6A51C /* LaunchScreen.storyboard */; };
-		5F78B2DD2335ACC600E6A51C /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2DC2335ACC600E6A51C /* LocationDetailViewController.swift */; };
 		5F78B2DF2335B73600E6A51C /* MyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2DE2335B73600E6A51C /* MyLocation.swift */; };
 		5F78B2E32335D3D300E6A51C /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F78B2E22335D3D300E6A51C /* LocationCell.swift */; };
 		5F78B2E62335DD6C00E6A51C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78B2E52335DD6C00E6A51C /* MapKit.framework */; };
-		5F9E2CE0233EAB220002E658 /* StaticDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9E2CDF233EAB220002E658 /* StaticDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +25,9 @@
 		5F78B2D123356DAD00E6A51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F78B2D423356DAD00E6A51C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F78B2D623356DAD00E6A51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F78B2DC2335ACC600E6A51C /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		5F78B2DE2335B73600E6A51C /* MyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocation.swift; sourceTree = "<group>"; };
 		5F78B2E22335D3D300E6A51C /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		5F78B2E52335DD6C00E6A51C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		5F9E2CDF233EAB220002E658 /* StaticDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +85,6 @@
 		5F78B2E72335DDAD00E6A51C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F78B2DC2335ACC600E6A51C /* LocationDetailViewController.swift */,
 				5F78B2CA23356DAC00E6A51C /* CurrentLocationViewController.swift */,
 			);
 			path = ViewControllers;
@@ -99,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				5F78B2DE2335B73600E6A51C /* MyLocation.swift */,
-				5F9E2CDF233EAB220002E658 /* StaticDatabase.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,11 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F78B2DD2335ACC600E6A51C /* LocationDetailViewController.swift in Sources */,
 				5F78B2C923356DAC00E6A51C /* AppDelegate.swift in Sources */,
 				5F78B2DF2335B73600E6A51C /* MyLocation.swift in Sources */,
 				5F78B2E32335D3D300E6A51C /* LocationCell.swift in Sources */,
-				5F9E2CE0233EAB220002E658 /* StaticDatabase.swift in Sources */,
 				5F78B2CB23356DAC00E6A51C /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
